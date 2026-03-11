@@ -8,31 +8,6 @@ type Category = 'all' | 'whitening' | 'braces' | 'veneers' | 'implants'
 const Results: FC = () => {
   const [category, setCategory] = useState<Category>('all')
 
-  const cases = [
-    {
-      id: 1,
-      title: 'Full Arch Veneers',
-      type: 'veneers' as Category,
-    },
-    {
-      id: 2,
-      title: 'Invisalign Correction',
-      type: 'braces' as Category,
-    },
-    {
-      id: 3,
-      title: 'Single Tooth Implant',
-      type: 'implants' as Category,
-    },
-    {
-      id: 4,
-      title: 'Laser Whitening',
-      type: 'whitening' as Category,
-    },
-  ]
-
-  const filtered = category === 'all' ? cases : cases.filter((c) => c.type === category)
-
   return (
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display min-h-screen">
       {/* Top Utility Bar (Lagos, Nigeria) */}
