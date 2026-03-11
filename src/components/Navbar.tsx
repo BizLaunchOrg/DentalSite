@@ -13,14 +13,14 @@ const Navbar: FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2" onClick={closeAndScrollTop}>
           <div className="bg-primary p-1.5 rounded-lg text-white">
             <span className="material-symbols-outlined text-2xl">dentistry</span>
           </div>
           <h2 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white uppercase">
             Dental<span className="text-primary">Clinic</span>
           </h2>
-        </div>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-8">
